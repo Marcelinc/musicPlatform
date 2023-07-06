@@ -1,0 +1,27 @@
+[{
+    "id": 1,
+    "name":"Spinnin Records",
+    "followers": 0,
+    "imgUrl": "/images/spinnin.jpg"
+},{
+    "id": 2,
+    "name":"Hexagon HQ",
+    "followers": 0,
+    "imgUrl": "/images/hexagonhq.jpg"
+},{
+    "id": 3,
+    "name":"UKF Drum & Bass",
+    "followers": 0,
+    "imgUrl": "/images/ukfdb.jpg"
+},{
+    "id": 4,
+    "name":"Monstercat",
+    "followers": 0,
+    "imgUrl": "/images/monstercat.png"
+},{
+    "id": 5,
+    "name":"Musical Freedom",
+    "followers": 0,
+    "imgUrl": "/images/musicalfreedom.jpg"
+}]
+

@@ -1,0 +1,17 @@
+.searchbar-container{
+    position: relative;
+    color: rgb(30, 67, 73);
+}
+.searchbar-container input{
+    height: 25px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background-color: rgb(247, 230, 210);
+}
+.searchbar-container input:focus{
+    background-color: rgb(250, 246, 242);
+}
+.icon-container:hover{
+    cursor: pointer;
+}
