@@ -2,8 +2,9 @@
 
 * [![TypeScript][TypeScript.img]][TypeScript-url]
 * [![CSS][CSS.img]][CSS-url]
-</br>
-![obraz](https://github.com/Marcelinc/musicPlatform/assets/82237491/868a18ea-4f2b-4064-930f-2fb3398b05be)
+
+![obraz](https://github.com/Marcelinc/musicPlatform/assets/82237491/9eff3a0d-33cb-4cfa-a78c-8db6489124da)
+
 
 <!-- MARKDOWN LINKS & IMAGES -->
 [TYpeScript.img]: https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white
