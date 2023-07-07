@@ -1,27 +1,44 @@
 [{
     "id": 1,
     "name":"Spinnin Records",
-    "followers": 0,
-    "imgUrl": "/images/spinnin.jpg"
+    "followers": 14,
+    "description": "Dutch electronic music record label founded in 1999 by Eelko van Kooten and Roger de Graaf. In September 2017, Warner Music Group acquired Spinnin' Records for over $100 million.",
+    "imgUrl": "/images/spinnin.jpg",
+    "tags": [{"key":"edm","value":"EDM"}]
 },{
     "id": 2,
-    "name":"Hexagon HQ",
-    "followers": 0,
-    "imgUrl": "/images/hexagonhq.jpg"
+    "name":"Hexagon Records",
+    "followers": 32,
+    "description":"Home of DON DIABLO and all HEXAGONIANS",
+    "imgUrl": "/images/hexagonhq.jpg",
+    "tags": [{"key":"futurehouse","value":"Future House"}]
 },{
     "id": 3,
     "name":"UKF Drum & Bass",
-    "followers": 0,
-    "imgUrl": "/images/ukfdb.jpg"
+    "followers": 57,
+    "description":"Record label founded by Luke Hood and AEI Group that focuses on promoting electronic music. UKF Music was created by Luke Hood, who began sharing bass music through his original two YouTube Channels, UKF Drum & Bass and UKF Dubstep, in 2009.",
+    "imgUrl": "/images/ukfdb.jpg",
+    "tags":[{"key":"drumandbass","value":"D&B"}]
 },{
     "id": 4,
     "name":"Monstercat",
-    "followers": 0,
-    "imgUrl": "/images/monstercat.png"
+    "followers": 24,
+    "description":"Canadian independent electronic music record label. Founded in 2011 by Mike Darlington and Ari Paunonen",
+    "imgUrl": "/images/monstercat.png",
+    "tags":[{"key":"electronic","value":"Electronic"},
+        {"key":"bass","value":"Bass"},
+        {"key":"house","value":"House"},
+        {"key":"dance","value":"Dance"}]
 },{
     "id": 5,
     "name":"Musical Freedom",
-    "followers": 0,
-    "imgUrl": "/images/musicalfreedom.jpg"
+    "followers": 89,
+    "description":"Dutch label founded by Tiësto in 2009",
+    "imgUrl": "/images/musicalfreedom.jpg",
+    "tags":[{"key":"electrohouse","value":"Electro House"},
+        {"key":"futurehouse","value":"Future House"},
+        {"key":"basshouse","value":"Bass House"},
+        {"key":"progressivehouse","value":"Progressive House"},
+        {"key":"bigroom","value":"Big Room"}]
 }]
 

@@ -1,0 +1,53 @@
+.musicTag{
+    background-color: aliceblue;
+    width:max-content;
+    color: black;
+    font-weight: 600;
+    padding-inline: 5px;
+    border-radius: 5px;
+    margin-inline: 5px;
+}
+
+/*styles for specific genre*/
+.edm{
+    background-color: goldenrod;
+    color: rgb(36, 5, 5);
+}
+.futurehouse{
+    background-color: rgb(37, 13, 75);
+    color: aliceblue;
+}
+.drumandbass{
+    background-color: aquamarine;
+    color: rgb(19, 35, 49);
+}
+.electronic{
+    background-color: rgb(126, 116, 29);
+    color: rgb(6, 61, 61);
+}
+.bass{
+    background-color: rgb(104, 30, 30);
+    color: aliceblue;
+}
+.house{
+    background-color: aqua;
+    color: rgb(78, 24, 24);
+}
+.dance{
+    background-color: blueviolet;
+    color: aliceblue;
+}
+.electrohouse{
+    background-color: olive;
+}
+.basshouse{
+    background-color: rgb(65, 17, 17);
+    color: aliceblue;
+}
+.progressivehouse{
+    background-color: bisque;
+}
+.bigroom{
+    background-color: rgb(20, 90, 49);
+    color: aliceblue;
+}
