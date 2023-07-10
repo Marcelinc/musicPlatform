@@ -1,6 +1,7 @@
 [{
     "id": 1,
     "name":"Spinnin Records",
+    "key": "spinninrecords",
     "followers": 14,
     "description": "Dutch electronic music record label founded in 1999 by Eelko van Kooten and Roger de Graaf. In September 2017, Warner Music Group acquired Spinnin' Records for over $100 million.",
     "imgUrl": "/images/spinnin.jpg",
@@ -8,6 +9,7 @@
 },{
     "id": 2,
     "name":"Hexagon Records",
+    "key": "hexagonrecords",
     "followers": 32,
     "description":"Home of DON DIABLO and all HEXAGONIANS",
     "imgUrl": "/images/hexagonhq.jpg",
@@ -15,6 +17,7 @@
 },{
     "id": 3,
     "name":"UKF Drum & Bass",
+    "key": "ukfd&b",
     "followers": 57,
     "description":"Record label founded by Luke Hood and AEI Group that focuses on promoting electronic music. UKF Music was created by Luke Hood, who began sharing bass music through his original two YouTube Channels, UKF Drum & Bass and UKF Dubstep, in 2009.",
     "imgUrl": "/images/ukfdb.jpg",
@@ -22,6 +25,7 @@
 },{
     "id": 4,
     "name":"Monstercat",
+    "key": "monstercat",
     "followers": 24,
     "description":"Canadian independent electronic music record label. Founded in 2011 by Mike Darlington and Ari Paunonen",
     "imgUrl": "/images/monstercat.png",
@@ -32,6 +36,7 @@
 },{
     "id": 5,
     "name":"Musical Freedom",
+    "key": "musicalfreedom",
     "followers": 89,
     "description":"Dutch label founded by Tiësto in 2009",
     "imgUrl": "/images/musicalfreedom.jpg",

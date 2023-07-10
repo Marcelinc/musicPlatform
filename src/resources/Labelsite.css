@@ -1,0 +1,45 @@
+.labelSite-container{
+    display: grid;
+    grid-template-columns: 35vw 1fr;
+    margin-top: 20px;
+}
+/***leftbar***/
+.leftbar{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+}
+.leftbar img{
+    width: 200px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+.labelname{
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.5em;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+/*Label followers*/
+.label-followers{
+    display: grid;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+/*Socials*/
+.label-socials{
+    display: grid;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+/***rightbar***/
+.label-nav{
+    display: flex;justify-content: space-around;
+}

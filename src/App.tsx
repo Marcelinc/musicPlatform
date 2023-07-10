@@ -5,6 +5,7 @@ import { Routes, Route } from 'react-router-dom'
 import { LabelSection } from './pages/LabelSection'
 import { Navbar } from './components/Navbar'
 import UserProfile from './pages/UserProfile'
+import LabelSite from './pages/LabelSite'
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
         <Route path='/' element={<Home/>}/>
         <Route path='/artists' element={<ArtistSection/>} />
         <Route path='/labels' element={<LabelSection/>} />
+        <Route path='/label/:name/:submenu?' element={<LabelSite/>}/>
         <Route path='/me' element={<UserProfile/>}/>
       </Routes>
     </>
