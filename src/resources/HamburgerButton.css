@@ -1,0 +1,50 @@
+.burger-container{
+    display: grid;
+
+}
+.burger-container:hover{
+    cursor: pointer;
+    
+}
+.line{
+    width: 20px;
+    height: 2px;
+    background-color: rgb(153, 197, 235);
+    margin: 2px;
+    transition: 0.8s ease;
+}
+
+#one.active{
+    rotate: 45deg;
+    translate: 0px 6px;
+}
+#two.active{
+    opacity: 0;
+}
+#two{
+    opacity: 1;
+}
+#three.active{
+    rotate: -45deg;
+    translate: 0px -6px;
+}
+
+#burger-links{
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    background-color: rgb(109, 120, 129);
+    display: grid;
+    width: 200px;
+    
+}
+#burger-links a{
+    padding: 15px;
+    border-bottom: 1px solid rgb(134, 131, 127);
+    background-color: rgb(59, 121, 121);
+    width: 89%;
+    color: black;
+}
+#burger-links a:hover{
+    opacity: 0.8;  
+}

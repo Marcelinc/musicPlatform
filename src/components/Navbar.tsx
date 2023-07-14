@@ -1,6 +1,7 @@
 import '../resources/Navbar.css'
 import {Link} from 'react-router-dom'
 import Searchbar from './Searchbar'
+import HamburgerButton from './HamburgerButton'
 
 type NavbarProps = {
     username: string,
@@ -15,6 +16,7 @@ export const Navbar = ({username,loggedIn}: NavbarProps) => {
             <Link to='/artists'>Artists</Link>
             <Link to='/labels'>Labels</Link>
         </div>
+        <HamburgerButton/>
         <Searchbar/>
         {loggedIn ? <Link to='/me'>{username}</Link> : <Link to='/logIn'>Log in</Link>}
         

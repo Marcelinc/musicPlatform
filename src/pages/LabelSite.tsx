@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react"
 import LabelsData from '../data/labels.json'
-import { Link, useParams } from "react-router-dom"
+import { Link, Outlet, useParams} from "react-router-dom"
 import '../resources/Labelsite.css'
 import Border from "../components/Border"
 import {IoMdHeart} from 'react-icons/io'
+import {ImFacebook, ImSoundcloud, ImSpotify, ImYoutube} from 'react-icons/im'
 
 interface Label {
     id: number,
@@ -27,7 +28,6 @@ const LabelSite = () => {
         tags: [{key: '',value: ''}]})
 
     const labelKey = useParams()
-    console.log(labelKey)
 
     useEffect(() => {
         var labelData = LabelsData.find(label => label.key === labelKey.name)
@@ -43,7 +43,9 @@ const LabelSite = () => {
             Loading
         </div> : <>
             <div className="leftbar">
-                <img src={label.imgUrl} alt={label.name}/>
+                <div className="label-img-container">
+                    <img src={label.imgUrl} alt={label.name}/>
+                </div>
                 <span className="labelname">{label.name}</span>
                 <Border/>
                 <div className="label-followers">
@@ -51,19 +53,20 @@ const LabelSite = () => {
                     <button className="label-follow">Follow</button>
                 </div>
                 <div className="label-socials">
-                    <Link to='#'>Facebook</Link>
-                    <Link to='#'>Youtube</Link>
-                    <Link to='#'>Soundcloud</Link>
+                    <Link to='#' className="fb"><ImFacebook/><span className="socials-name">Facebook</span></Link>
+                    <Link to='#' className="yt"><ImYoutube/><span className="socials-name">Youtube</span></Link>
+                    <Link to='#' className="soundcloud"><ImSoundcloud/><span className="socials-name">Soundcloud</span></Link>
+                    <Link to='#' className="spotify"><ImSpotify/><span className="socials-name">Spotify</span></Link>
                 </div>
             </div>
             <div className="rightbar">
                 <div className="label-nav">
-                    <Link to='' >Overall</Link>
+                    <Link to={'/label/'+label.key} >Overall</Link>
                     <Link to='artists' >Artists</Link>
                     <Link to='tracks' >Tracks</Link>
                 </div>
                 <div className="label-content">
-
+                    <Outlet/>
                 </div>
             </div>
         </>}

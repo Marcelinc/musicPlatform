@@ -1,6 +1,5 @@
 .labelSite-container{
     display: grid;
-    grid-template-columns: 35vw 1fr;
     margin-top: 20px;
 }
 /***leftbar***/
@@ -8,12 +7,18 @@
     display: grid;
     justify-content: center;
     align-items: center;
-
+}
+.rightbar{
+    background-color: aqua;
 }
 .leftbar img{
-    width: 200px;
+    width: 10em;
     border-radius: 50%;
     margin-top: 10px;
+}
+.label-img-container{
+    display: flex;
+    justify-content: center;
 }
 .labelname{
     text-align: center;
@@ -31,6 +36,15 @@
     justify-content: center;
     margin-top: 10px;
 }
+.label-follow{
+    width: 150px;
+    height: fit-content;
+    padding: 3px;
+    font-weight: 600;
+    border: 1px solid rgb(95, 88, 80);
+    background-color: rgba(63, 77, 88, 0.438);
+    color: aliceblue;
+}
 
 /*Socials*/
 .label-socials{
@@ -38,8 +52,48 @@
     justify-content: center;
     margin-top: 15px;
 }
+.fb:hover{
+    color: rgb(28, 28, 214);
+}
+.yt:hover{
+    color: red;
+}
+.soundcloud:hover{
+    color: rgb(230, 66, 1);
+}
+.spotify:hover{
+    color: green;
+}
+.socials-name{
+    margin-inline: 10px;
+}
 
 /***rightbar***/
 .label-nav{
     display: flex;justify-content: space-around;
+}
+
+
+/*Media queries*/
+
+@media screen and (max-width: 649px){
+    .label-socials{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 10px;
+        justify-content: space-between;
+    }
+    .socials-name{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 650px){
+    .leftbar{
+        width: 300px;
+    }
+    .labelSite-container{
+        grid-template-columns: 300px 1fr;
+    }
+    
 }
