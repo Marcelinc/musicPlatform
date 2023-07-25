@@ -2,6 +2,7 @@
 
 * [![TypeScript][TypeScript.img]][TypeScript-url]
 * [![CSS][CSS.img]][CSS-url]
+* [![React][React.js]][React-url]
 
 ![obraz](https://github.com/Marcelinc/musicPlatform/assets/82237491/9eff3a0d-33cb-4cfa-a78c-8db6489124da)
 
@@ -11,5 +12,6 @@
 [TypeScript-url]: https://www.typescriptlang.org/
 [CSS.img]: https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white
 [CSS-url]: #
-
+[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
+[React-url]: https://reactjs.org/
 
