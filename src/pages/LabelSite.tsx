@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import LabelsData from '../data/labels.json'
-import { Link, Outlet, useParams} from "react-router-dom"
-import '../resources/Labelsite.css'
+import { Link, Outlet, useParams, useOutletContext} from "react-router-dom"
+import '../resources/LabelSite/Labelsite.css'
 import Border from "../components/Border"
 import {IoMdHeart} from 'react-icons/io'
 import {ImFacebook, ImSoundcloud, ImSpotify, ImYoutube} from 'react-icons/im'
@@ -14,6 +14,9 @@ interface Label {
     description: string,
     imgUrl: string,
     tags: {key: string,value: string}[]
+}
+type ContextType = {
+    labelDesc: string
 }
 
 const LabelSite = () => {
@@ -66,7 +69,7 @@ const LabelSite = () => {
                     <Link to='tracks' >Tracks</Link>
                 </div>
                 <div className="label-content">
-                    <Outlet/>
+                    <Outlet context={{labelDesc:label.description}}/>
                 </div>
             </div>
         </>}
@@ -75,3 +78,7 @@ const LabelSite = () => {
 }
 
 export default LabelSite
+
+export function getLabelDesc(){
+    return useOutletContext<ContextType>()
+}

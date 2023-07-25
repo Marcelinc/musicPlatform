@@ -1,0 +1,15 @@
+[{
+    "id":1,
+    "artistName":"LOUD ABOUT US!",
+    "image":"artistImages/loudaboutus.png"
+},
+{
+    "id":2,
+    "artistName":"Dropgun",
+    "image":"artistImages/dropgun.jpg"
+},
+{
+    "id":3,
+    "artistName":"Oliver Heldens",
+    "image":"artistImages/oliverheldens.jpg"
+}]

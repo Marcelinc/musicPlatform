@@ -1,0 +1,22 @@
+footer{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 25px;
+    max-width: 500px;
+}
+#footer-line{
+    width: 70vw;
+    height: 1px;
+    background-color: aliceblue;
+    position: absolute;
+    margin: 1px;
+}
+.footer-section{
+    display: grid;
+    margin: 15px 20px;
+    text-align: center;
+}
+.footer-section h3{
+    margin: 5px;
+}

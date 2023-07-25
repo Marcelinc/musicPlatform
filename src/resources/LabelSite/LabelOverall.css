@@ -1,0 +1,12 @@
+:root{
+    --headerWidth: 220px;
+}
+
+.label-overall{
+    padding: 5px 10px;
+}
+.header{
+    border-bottom: 1px solid rgb(129, 127, 125);
+    font-style: italic;
+    width: var(--headerWidth);
+}

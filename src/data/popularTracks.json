@@ -1,0 +1,18 @@
+[{
+    "id":1,
+    "name": "Drums",
+    "imgUrl": "trackImages/drums.jpg",
+    "artist":[{"id":1,"artistName":"LOUD ABOUT US!"}]
+},
+{
+    "id":2,
+    "name": "Nobody",
+    "imgUrl": "trackImages/nobody.jpg",
+    "artist":[{"id":2,"artistName":"Dropgun"}]
+},
+{
+    "id":3,
+    "name": "Flamingo",
+    "imgUrl": "trackImages/flamingo.jpg",
+    "artist":[{"id":3,"artistName":"Oliver Heldens"}]
+}]

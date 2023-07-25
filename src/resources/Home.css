@@ -1,0 +1,64 @@
+.home-container{
+    width: 70vw;
+    margin: auto;
+    min-width: min-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2d483f;
+}
+
+/*account section*/
+#account{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(43, 45, 48, 0.527);
+    text-align: center;
+    font-size: min(max(15px,5vw),22px);
+    margin: 10px;
+    flex-direction: column;
+    width:50vw;
+    min-width: 300px;
+}
+#account *{
+    width: 300px;   
+}
+#account button{
+    padding: 5px;
+    max-width: 200px;
+    background-color: rgb(67, 94, 121);
+    color: aliceblue;
+    margin-bottom: 15px;
+}
+
+/*mobile app section*/
+#mobileapp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+#mobileApp-img img{
+    width: 60vw;
+    max-width: 500px;
+    min-width: 200px;
+}
+.mobileApp-content{
+    padding: 10px;
+    text-align: center;
+    font-size: min(max(19px,5vw),32px);
+    min-width: 10px;
+}
+.mobileApp-content p{
+    width: 300px;
+    margin: 0 0 10px 0;
+}
+
+/*media queries*/
+@media screen and (max-width:393px) {
+    .mobileApp-content p{
+        width: 200px;
+    }
+}
