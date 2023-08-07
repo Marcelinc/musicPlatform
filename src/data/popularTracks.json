@@ -15,4 +15,16 @@
     "name": "Flamingo",
     "imgUrl": "trackImages/flamingo.jpg",
     "artist":[{"id":3,"artistName":"Oliver Heldens"}]
+},
+{
+    "id":4,
+    "name": "Momentum",
+    "imgUrl": "trackImages/momentum.jpg",
+    "artist":[{"id":4,"artistName":"Marnik"}]
+},
+{
+    "id":5,
+    "name": "The Time Has Come",
+    "imgUrl": "trackImages/timehascome.jpg",
+    "artist":[{"id":5,"artistName":"Clarx"},{"id":6,"artistName":"Matthew Crash"}]
 }]

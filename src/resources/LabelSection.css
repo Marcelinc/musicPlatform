@@ -1,9 +1,15 @@
+.label-container{
+    max-width: 1500px;
+    margin: auto;
+    min-width: 365px;
+}
 .label-list{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(600px,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(450px,1fr));
 }
 .label-container h1{
     margin: 10px 20px;
+    font-style: italic;
 }
 .label{
     background-color: rgba(38, 40, 43, 0.952);
@@ -21,11 +27,13 @@
     display: flex;
 }
 .label-img img{
-    width: 200px
+    width: 200px;
+    transition: width 500ms ease;
 }
 .label-info{
     padding: 10px;
     text-align: justify;
+    min-height: 100%;
 }
 .label-tags{
     display: flex;
@@ -38,3 +46,23 @@
     display: flex;
     align-items: center;
 }
+
+.label-desc {
+    height: 52%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: pre-wrap;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+  }
+
+  @media screen and (max-width: 430px) {
+    .label-img img {
+        width: 150px;
+        
+      }
+    .label-list{
+        grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+    }
+  }

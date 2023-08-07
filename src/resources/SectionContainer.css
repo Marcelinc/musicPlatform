@@ -1,32 +1,40 @@
 .section-container{
     background-color: rgb(120, 121, 122);
     padding: 10px;
-    width: 70vw;
+    width: 100%;
     margin-block: 15px;
 }
 .section-container h2{
     border-bottom: 1px solid beige;
     max-width: 40%;
     margin: 0;
+    font-size: min(max(14px,4vw),26px);
+    font-style: oblique;
 }
 .section-list{
     display: flex;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    scrollbar-width: thin;
 }
 .section-item{
     background-color: rgb(88, 128, 128);
     margin: 10px;
-    width: 190px;
-    height: 215px;
+    padding: 10px;
     display: grid;
-    grid-template-rows: 160px 27px 25px;
+    box-shadow: 5px 5px 5px #4f5956;
 }
 .section-image{
     display: flex;
     justify-content: center;
 }
 .section-image img{
-    width:80%;
+    width:20vw;
     margin: 5px;
+    object-fit: contain;
+    min-width: 100px;
+    max-width: 190px;
+    aspect-ratio: 16/10;
 }
 
 .section-item span{
@@ -43,3 +51,26 @@
 .section-item-owner{
     font-size: 0.9em;
 }
+
+/*scroll snaps*/
+.snaps-inline{
+    scroll-snap-type: inline mandatory;
+    scroll-padding-inline: 10px;
+}
+.snaps-inline > *{
+    scroll-snap-align: start;
+}
+
+/*scrollbar*/
+::-webkit-scrollbar{
+    height: 5px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }

@@ -1,6 +1,8 @@
 .labelSite-container{
     display: grid;
     margin-top: 20px;
+    max-width: 1000px;
+    margin: auto;
 }
 /***leftbar***/
 .leftbar{
