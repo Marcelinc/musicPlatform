@@ -4,7 +4,8 @@
 * [![CSS][CSS.img]][CSS-url]
 * [![React][React.js]][React-url]
 
-![obraz](https://github.com/Marcelinc/musicPlatform/assets/82237491/9eff3a0d-33cb-4cfa-a78c-8db6489124da)
+#Live
+https://musicplatform.netlify.app/
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
