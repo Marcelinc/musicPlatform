@@ -12,6 +12,7 @@ const SectionTracks = ({title,list}:SectionProps) => {
     const navigate = useNavigate()
     const redirectToTrack = (id:number) => {
         //navigate('/track/' + id)
+        console.log(id)
     }
     const redirectToArtist = (id:number) => {
         navigate('/artist/' + id)
