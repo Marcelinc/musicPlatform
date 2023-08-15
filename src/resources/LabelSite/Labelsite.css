@@ -53,10 +53,13 @@
     margin-top: 15px;
 }
 .fb:hover{
-    color: rgb(28, 28, 214);
+    color: rgb(9, 9, 206);
 }
 .yt:hover{
     color: red;
+}
+.inst:hover{
+    color: palevioletred;
 }
 .soundcloud:hover{
     color: rgb(230, 66, 1);
