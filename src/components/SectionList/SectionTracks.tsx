@@ -11,7 +11,7 @@ const SectionTracks = ({title,list}:SectionProps) => {
 
     const navigate = useNavigate()
     const redirectToTrack = (id:number) => {
-        navigate('/track/' + id)
+        //navigate('/track/' + id)
     }
     const redirectToArtist = (id:number) => {
         navigate('/artist/' + id)
@@ -23,7 +23,7 @@ const SectionTracks = ({title,list}:SectionProps) => {
         <div className='section-list snaps-inline'>
             {list?.map((item => (
                 <div className='section-item' key={item.id}>
-                    <div className='section-image' /*onClick={() => redirectToTrack(item.id)}*/>
+                    <div className='section-image' onClick={() => redirectToTrack(item.id)}>
                         <img src={`/images/${item.imgUrl}`} alt='Track Image'/>
                     </div>
                     <span className='section-item-name' /*onClick={() => redirectToTrack(item.id)}*/>{item.name}</span>
