@@ -1,0 +1,148 @@
+.container{
+    margin: auto;
+    width: 70vw;
+    max-width: 1200px;
+    min-width: 300px;
+}
+
+/*user banner*/
+#artist-banner{
+    background-image: linear-gradient(to right bottom,rgb(71, 151, 161),rgb(42, 42, 90));
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+#artist-img {
+    align-items: center;
+    display: flex;
+  }
+#artist-img img{
+    width: 12vw;
+    border-radius: 48%;
+    min-width: 100px;
+    max-width: 170px;
+    aspect-ratio: 5/5;
+    object-fit: cover;
+}
+#artist-info-container{
+    display: grid;
+}
+#artist-info-container span{
+    background-color: rgba(19, 14, 14, 0.712);
+    margin: 2px;
+    padding: 2px 5px;
+    width: fit-content;
+}
+
+#artist-info-container div{
+    margin: 10px;
+    display: grid;
+}
+#artist-follow button{
+    padding: 0;
+    width: 70px;
+    background-color: rgb(46, 65, 65);
+    color: aliceblue;
+}
+#artist-follow button:hover{
+    opacity: 0.8;
+}
+
+#artistName{
+    font-size: clamp(18px,2vw,28px);
+    font-weight: 600;
+}
+#location:empty{
+    background-color: transparent;
+}
+
+#followers-count{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/*main*/
+#artist-main-content {
+    padding: 10px;
+    background-color: rgba(80, 87, 94,0.64);
+    display: grid;
+    grid-template-columns: 2.3fr 1fr;
+}
+#artist-content{
+    padding: 5px;
+}
+.artist-section{
+    position: relative;
+}
+.section-header{
+    border-bottom: 1px solid rgb(5, 4, 4);
+    width: 100%;
+    min-width: 200px;
+}
+.section-more{
+    position: absolute;
+    top: 10px;
+    right: 3%;
+    font-size: small;
+}
+.section-more:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+/*aside*/
+#artist-aside{
+    border-left: 2px solid rgb(5, 4, 4);
+    padding: 5px;
+}
+#artist-aside section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 1px solid rgb(5, 4, 4);
+}
+
+#artist-about{
+    text-align: justify;
+    padding: 10px;
+}
+#artist-latest span{
+    margin: 10px;
+}
+#artist-latest img{
+    width: 15vw;
+    max-width: 200px;
+    min-width: 150px;
+}
+
+/*socials*/
+#social-links{
+    display:grid;
+    grid-gap: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+#social-links span:hover{
+    cursor: pointer;
+}
+
+
+/*media queries*/
+@media screen and (max-width: 979px) {
+    #artist-main-content{
+        display: flex;
+        flex-direction: column;
+    }
+    #artist-content{
+        order: 2;
+    }
+    #social-links{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #artist-aside{
+        border-left: none;
+    }
+}

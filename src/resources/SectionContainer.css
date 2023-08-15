@@ -52,6 +52,11 @@
     font-size: 0.9em;
 }
 
+.section-image:hover,.section-item-name:hover,.section-item-owner:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
 /*scroll snaps*/
 .snaps-inline{
     scroll-snap-type: inline mandatory;
