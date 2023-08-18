@@ -23,6 +23,11 @@ type ArtistType = {
     trackName:string,
     trackImg:string,
   }[] | [],
+  playlists: {
+    playlistId: number,
+    playlistName:string,
+    playlistImg:string
+  }[] | []
 }
 
 const ArtistPage = () => {
@@ -36,7 +41,8 @@ const ArtistPage = () => {
     followers:0,
     about: '',
     latest: null,
-    tracks:[]
+    tracks:[],
+    playlists:[]
   })
 
   useEffect(() => {
@@ -85,9 +91,10 @@ const ArtistPage = () => {
           </section>
           <section className='artist-section'>
             <h2 className='section-header'>Playlists</h2>
-            <span className='section-more'>See more</span>
-            <div className='artist-section-list'>
-              No tracks
+            {artist.playlists.length > 4 && <span className='section-more'>See more</span>}
+            <div className='section-list'>
+              {artist.playlists.length > 0 ? artist.playlists.slice(0,4).map(playlist => <ContentBlock key={playlist.playlistId} contentType='playlist' contentName={playlist.playlistName}
+                contentId={playlist.playlistId} imgUrl={playlist.playlistImg}/>) : 'No tracks'}
             </div>
           </section>
         </div>
