@@ -11,6 +11,7 @@ import LabelArtists from './components/labelSite/LabelArtists'
 import LabelTracks from './components/labelSite/LabelTracks'
 import TrackSiteContainer from './pages/TrackSiteContainer'
 import ArtistPage from './pages/ArtistPage'
+import PlaylistPage from './pages/PlaylistPage'
 
 function App() {
 
@@ -27,6 +28,7 @@ function App() {
           <Route path='tracks' element={<LabelTracks/>}/>
         </Route>
         <Route path='/track/:id' element={<TrackSiteContainer/>}/>
+        <Route path='/playlist/:id' element={<PlaylistPage/>}/>
         <Route path='/artist/:id' element={<ArtistPage/>}/>
         <Route path='/me' element={<UserProfile/>}/>
       </Routes>

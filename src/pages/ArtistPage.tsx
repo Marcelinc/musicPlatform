@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react'
 import Artists from '../data/artists.json'
 import {IoMdHeart} from 'react-icons/io'
 import {FaLocationDot} from 'react-icons/fa6'
+import ContentBlock from '../components/ContentBlock'
 
 type ArtistType = {
   id:number,
@@ -16,7 +17,12 @@ type ArtistType = {
     trackId: number,
     trackName:string,
     trackImg:string,
-  } | null
+  } | null,
+  tracks: {
+    trackId: number,
+    trackName:string,
+    trackImg:string,
+  }[] | [],
 }
 
 const ArtistPage = () => {
@@ -29,7 +35,8 @@ const ArtistPage = () => {
     location:'',
     followers:0,
     about: '',
-    latest: null
+    latest: null,
+    tracks:[]
   })
 
   useEffect(() => {
@@ -70,15 +77,16 @@ const ArtistPage = () => {
           </section>
           <section className='artist-section'>
             <h2 className='section-header'>Tracks</h2>
-            <span className='section-more'>See more</span>
-            <div>
-              No tracks
+            {artist.tracks.length > 4 && <span className='section-more'>See more</span>}
+            <div className='section-list'>
+              {artist.tracks.length > 0 ? artist.tracks.slice(0,4).map(track => <ContentBlock key={track.trackId} contentType='track' contentName={track.trackName}
+                contentId={track.trackId} imgUrl={track.trackImg}/>) : 'No tracks'}
             </div>
           </section>
           <section className='artist-section'>
             <h2 className='section-header'>Playlists</h2>
             <span className='section-more'>See more</span>
-            <div>
+            <div className='artist-section-list'>
               No tracks
             </div>
           </section>
@@ -90,8 +98,8 @@ const ArtistPage = () => {
           </section>
           <section id='artist-latest'>
             <h2>Latest</h2>
-              <img src={artist.latest?.trackImg} alt={artist.latest?.trackName}/>
-              <span>{artist.latest?.trackName}</span>
+            <img src={artist.latest?.trackImg} alt={artist.latest?.trackName}/>
+            <span>{artist.latest?.trackName}</span>
           </section>
           <section id='artist-socials'>
             <h2>Socials</h2>
