@@ -11,7 +11,7 @@ import ArtistBlock from '../components/trackSite/ArtistBlock'
 
 const TrackSiteContainer = () => {
   const {id} = useParams()
-  const navigate = useNavigate()
+  //const navigate = useNavigate()
   const [track,setTrack] = useState<typeof TrackList[0]>()
   const [playingTrack,setPlayingTrack] = useState(false)
 
