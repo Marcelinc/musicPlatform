@@ -1,0 +1,5 @@
+.section-line{
+    border: 1px solid rgb(73, 72, 71);
+    width: 25%;
+    min-width: 100px;
+}

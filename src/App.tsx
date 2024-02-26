@@ -12,6 +12,7 @@ import LabelTracks from './components/labelSite/LabelTracks'
 import TrackSiteContainer from './pages/TrackSiteContainer'
 import ArtistPage from './pages/ArtistPage'
 import PlaylistPage from './pages/PlaylistPage'
+import ErrorPage from './pages/ErrorPage'
 
 function App() {
 
@@ -31,6 +32,7 @@ function App() {
         <Route path='/playlist/:id' element={<PlaylistPage/>}/>
         <Route path='/artist/:id' element={<ArtistPage/>}/>
         <Route path='/me' element={<UserProfile/>}/>
+        <Route path='*' element={<ErrorPage/>}/>
       </Routes>
     </>
   )

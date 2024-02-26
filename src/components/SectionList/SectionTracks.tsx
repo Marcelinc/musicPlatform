@@ -2,12 +2,12 @@ import { useNavigate } from 'react-router-dom'
 import '../../resources/SectionContainer.css'
 
 type SectionProps = {
-    title: string,
-    list: {id:number, name: string, imgUrl: string,artist: {
+    sectionTitle: string,
+    tracksList: {id:number, name: string, imgUrl: string,artist: {
         id:number, artistName: string}[]}[]
 }
 
-const SectionTracks = ({title,list}:SectionProps) => {
+const SectionTracks = ({sectionTitle,tracksList}:SectionProps) => {
 
     const navigate = useNavigate()
     const redirectToTrack = (id:number) => {
@@ -20,9 +20,9 @@ const SectionTracks = ({title,list}:SectionProps) => {
 
   return (
     <section className='section-container'>
-        <h2>{title}</h2>
+        <h2>{sectionTitle}</h2>
         <div className='section-list snaps-inline'>
-            {list?.map((item => (
+            {tracksList?.map((item => (
                 <div className='section-item' key={item.id}>
                     <div className='section-image' onClick={() => redirectToTrack(item.id)}>
                         <img src={`/images/${item.imgUrl}`} alt='Track Image'/>

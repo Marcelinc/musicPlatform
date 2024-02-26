@@ -1,21 +1,32 @@
+import { useNavigate } from 'react-router-dom'
 import '../../resources/SectionContainer.css'
 
 type SectionProps = {
-    title:string,
-    list: {
+    sectionTitle:string,
+    artistsList: {
         id:number,
         artistName:string,
         image: string
     }[]
 }
 
-const SectionArtists = ({title,list}:SectionProps) => {
+const SectionArtists = ({sectionTitle,artistsList}:SectionProps) => {
+
+    const navigate = useNavigate();
+    console.log('artistslist',artistsList)
+
+    //navigate to the artist's page
+    const redirectToArtist = (artistId:number) => {
+        console.log('redirectToArtist', artistId)
+        navigate('/artist/'+artistId);
+    }
+
   return (
     <section className='section-container'>
-        <h2>{title}</h2>
+        <h2>{sectionTitle}</h2>
         <div className='section-list'>
-            {list?.map((item => (
-                <div className='section-item' key={item.id}>
+            {artistsList?.map((item => (
+                <div className='section-item' key={item.id} onClick={() => redirectToArtist(item.id)}>
                     <div className='section-image'>
                         <img src={`/images/${item.image}`} alt='Artist Image'/>
                     </div>

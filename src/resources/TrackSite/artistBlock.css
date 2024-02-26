@@ -1,0 +1,14 @@
+.artist-block-container{
+    display: flex;
+    align-items: center;
+}
+.artist-block-container:hover{
+    cursor: pointer;
+    opacity: .7;
+}
+.artist-block-container img{
+    border-radius: 50%;
+    width: 5vw;
+    min-width: 50px;
+    margin-inline: 10px;
+}
