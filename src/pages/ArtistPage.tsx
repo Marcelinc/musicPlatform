@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router-dom'
 import '../resources/ArtistPage.css'
 import { useEffect, useState } from 'react'
 import Artists from '../data/artists.json'
@@ -23,11 +23,22 @@ type ArtistType = {
     trackName:string,
     trackImg:string,
   }[] | [],
+  playlists: {
+    playlistId: number,
+    playlistName:string,
+    playlistImg:string
+  }[] | [],
+  popularTracks: {
+    trackId: number,
+    trackName:string,
+    trackImg:string,
+  }[] | [];
 }
 
 const ArtistPage = () => {
 
   const {id} = useParams()
+  const navigate = useNavigate();
   const [artist,setArtist] = useState<ArtistType>({
     id: 0,
     artistName:'',
@@ -36,7 +47,9 @@ const ArtistPage = () => {
     followers:0,
     about: '',
     latest: null,
-    tracks:[]
+    tracks:[],
+    playlists:[],
+    popularTracks:[]
   })
 
   useEffect(() => {
@@ -70,9 +83,8 @@ const ArtistPage = () => {
         <div id='artist-content'>
           <section className='artist-section'>
             <h2 className='section-header'>Popular</h2>
-            <span className='section-more'>See more</span>
-            <div>
-              No tracks
+            <div className='section-list'>
+              {artist.popularTracks.length > 0 ? artist.popularTracks.slice(0,4).map(track => <ContentBlock key={track.trackId} contentType='track' contentName={track.trackName} contentId={track.trackId} imgUrl={track.trackImg}/>) : 'No tracks'}
             </div>
           </section>
           <section className='artist-section'>
@@ -85,9 +97,10 @@ const ArtistPage = () => {
           </section>
           <section className='artist-section'>
             <h2 className='section-header'>Playlists</h2>
-            <span className='section-more'>See more</span>
-            <div className='artist-section-list'>
-              No tracks
+            {artist.playlists.length > 4 && <span className='section-more'>See more</span>}
+            <div className='section-list'>
+              {artist.playlists.length > 0 ? artist.playlists.slice(0,4).map(playlist => <ContentBlock key={playlist.playlistId} contentType='playlist' contentName={playlist.playlistName}
+                contentId={playlist.playlistId} imgUrl={playlist.playlistImg}/>) : 'No playlists'}
             </div>
           </section>
         </div>
@@ -98,7 +111,7 @@ const ArtistPage = () => {
           </section>
           <section id='artist-latest'>
             <h2>Latest</h2>
-            <img src={artist.latest?.trackImg} alt={artist.latest?.trackName}/>
+            <img src={artist.latest?.trackImg} alt={artist.latest?.trackName} onClick={() => navigate('/track/'+artist.latest?.trackId)}/>
             <span>{artist.latest?.trackName}</span>
           </section>
           <section id='artist-socials'>

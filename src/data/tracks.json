@@ -1,31 +1,110 @@
 [{
     "id":1,
     "name": "Drums",
-    "imgUrl": "trackImages/drums.jpg",
-    "artist":[{"id":1,"artistName":"LOUD ABOUT US!"}],
-    "genre": [{"name":"Bass House"}]
+    "imgUrl": "/images/trackImages/drums.jpg",
+    "artist":[{"id":1,"artistName":"LOUD ABOUT US!", "artistImageSrc": "/images/artistImages/loudaboutus.png"}],
+    "genre": [{"key":"basshouse","value":"Bass House"}],
+    "plays": 124,
+    "publisher": "HEXAGON",
+    "releaseDate": "23 June 2017"
 },
 {
     "id":2,
     "name": "Nobody",
-    "imgUrl": "trackImages/nobody.jpg",
-    "artist":[{"id":2,"artistName":"Dropgun"}]
+    "imgUrl": "/images/trackImages/nobody.jpg",
+    "artist":[{"id":2,"artistName":"Dropgun", "artistImageSrc": "/images/artistImages/dropgun.jpg"}],
+    "genre": [{"key":"futurehouse","value":"Future House"}],
+    "plays": 7453,
+    "publisher": "HEXAGON",
+    "releaseDate": "25 November 2016"
 },
 {
     "id":3,
     "name": "Flamingo",
-    "imgUrl": "trackImages/flamingo.jpg",
-    "artist":[{"id":3,"artistName":"Oliver Heldens"}]
+    "imgUrl": "/images/trackImages/flamingo.jpg",
+    "artist":[{"id":3,"artistName":"Oliver Heldens", "artistImageSrc": "/images/artistImages/oliverheldens.jpg"}],
+    "genre": [{"key":"house","value":"House"}],
+    "plays": 6543,
+    "publisher": "",
+    "releaseDate": "29 August 2016"
 },
 {
     "id":4,
     "name": "Momentum",
-    "imgUrl": "trackImages/momentum.jpg",
-    "artist":[{"id":4,"artistName":"Marnik"}]
+    "imgUrl": "/images/trackImages/momentum.jpg",
+    "artist":[{"id":4,"artistName":"Marnik", "artistImageSrc": "/images/artistImages/marnik.jpg"}],
+    "genre": [{"key":"bigroom","value":"Big Room"}],
+    "plays": 7542,
+    "publisher": "Revealed recordings",
+    "releaseDate": "1 September 2014"
 },
 {
     "id":5,
     "name": "The Time Has Come",
-    "imgUrl": "trackImages/timehascome.jpg",
-    "artist":[{"id":5,"artistName":"Clarx"},{"id":6,"artistName":"Matthew Crash"}]
+    "imgUrl": "/images/trackImages/timehascome.jpg",
+    "artist":[{"id":5,"artistName":"Clarx", "artistImageSrc": "/images/artistImages/clarx.jpg"},{"id":6,"artistName":"Matthew Crash", "artistImageSrc": "/images/artistImages/matthew_crash.png"}],
+    "genre": [{"key":"futurehouse","value":"Future House"}],
+    "plays": 453,
+    "publisher": "Future House Music",
+    "releaseDate": "16 August 2019"
+},
+{
+    "id":6,
+    "name": "The Time Has Come",
+    "imgUrl": "/images/trackImages/timehascome.jpg",
+    "artist":[{"id":5,"artistName":"Clarx", "artistImageSrc": "/images/artistImages/clarx.jpg"},{"id":6,"artistName":"Matthew Crash", "artistImageSrc": "/images/artistImages/matthewcrash.jpg"}],
+    "genre": [{"key":"futurehouse","value":"Future House"}],
+    "plays": 453,
+    "publisher": "Future House Music",
+    "releaseDate": "16 August 2019"
+},
+{
+    "id":7,
+    "name": "The Time Has Come",
+    "imgUrl": "/images/trackImages/timehascome.jpg",
+    "artist":[{"id":5,"artistName":"Clarx", "artistImageSrc": "/images/artistImages/clarx.jpg"},{"id":6,"artistName":"Matthew Crash", "artistImageSrc": "/images/artistImages/matthewcrash.jpg"}],
+    "genre": [{"key":"futurehouse","value":"Future House"}],
+    "plays": 453,
+    "publisher": "Future House Music",
+    "releaseDate": "16 August 2019"
+},
+{
+    "id":8,
+    "name": "The Time Has Come",
+    "imgUrl": "/images/trackImages/timehascome.jpg",
+    "artist":[{"id":5,"artistName":"Clarx", "artistImageSrc": "/images/artistImages/clarx.jpg"},{"id":6,"artistName":"Matthew Crash", "artistImageSrc": "/images/artistImages/matthewcrash.jpg"}],
+    "genre": [{"key":"futurehouse","value":"Future House"}],
+    "plays": 453,
+    "publisher": "Future House Music",
+    "releaseDate": "16 August 2019"
+},
+{
+    "id":9,
+    "name": "Take Off",
+    "imgUrl": "/images/trackImages/takeoff.jpg",
+    "artist":[{"id":1,"artistName":"LOUD ABOUT US!", "artistImageSrc": "/images/artistImages/loudaboutus.png"}],
+    "genre": [{"key":"futurehouse","value":"Future House"}],
+    "plays": 453,
+    "publisher": "Future House Music",
+    "releaseDate": "16 August 2019"
+},
+{
+    "id":10,
+    "name": "So Fresh",
+    "imgUrl": "/images/trackImages/sofresh.jpg",
+    "artist":[{"id":1,"artistName":"LOUD ABOUT US!", "artistImageSrc": "/images/artistImages/loudaboutus.png"}],
+    "genre": [{"key":"futurehouse","value":"Future House"}],
+    "plays": 453,
+    "publisher": "Future House Music",
+    "releaseDate": "16 August 2019"
+},
+{
+    "id":11,
+    "name": "Rat Race",
+    "imgUrl": "/images/trackImages/ratrace.jpg",
+    "artist":[{"id":1,"artistName":"LOUD ABOUT US!", "artistImageSrc": "/images/artistImages/loudaboutus.png"}],
+    "genre": [{"key":"futurehouse","value":"Future House"}],
+    "plays": 453,
+    "publisher": "Future House Music",
+    "releaseDate": "16 August 2019"
 }]

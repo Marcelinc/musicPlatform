@@ -1,14 +1,14 @@
 import { useNavigate } from "react-router-dom"
 import '../resources/ContentBlock.css'
 
-type ContentBlockType = {
+type ContentBlockProps = {
   contentType: string,
   imgUrl: string,
   contentName: string,
   contentId: number,
 }
 
-const ContentBlock = ({contentType,imgUrl,contentName,contentId}: ContentBlockType) => {
+const ContentBlock = ({contentType,imgUrl,contentName,contentId}: ContentBlockProps) => {
   
   const navigate = useNavigate()
   const onClickHandler = () => {
@@ -16,7 +16,7 @@ const ContentBlock = ({contentType,imgUrl,contentName,contentId}: ContentBlockTy
       navigate('/track/' + contentId)
     }
     if(contentType === 'playlist'){
-      navigate('/playlist/' + contentId)
+      //navigate('/playlist/' + contentId)
     }
   }
 

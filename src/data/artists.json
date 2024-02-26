@@ -10,7 +10,11 @@
         {"trackId": 9, "trackName":"Take Off","trackImg":"/images/trackImages/takeoff.jpg"},
         {"trackId":10, "trackName":"So Fresh","trackImg":"/images/trackImages/sofresh.jpg"},
         {"trackId":11, "trackName":"Rat Race","trackImg":"/images/trackImages/ratrace.jpg"},
-        {"trackId":12, "trackName":"Back Again","trackImg":"/images/trackImages/backagain.jpg"}]
+        {"trackId":12, "trackName":"Back Again","trackImg":"/images/trackImages/backagain.jpg"}],
+    "playlists": [{"playlistId": 1, "playlistName":"Playlist1","playlistImg":"/images/playlistImages/playlist1.jpg"},
+        {"playlistId": 2, "playlistName":"Playlist2","playlistImg":"/images/playlistImages/playlist2.jpg"}],
+    "popularTracks": [{"trackId":10, "trackName":"So Fresh","trackImg":"/images/trackImages/sofresh.jpg"},{"trackId": 9,
+        "trackName":"Take Off","trackImg":"/images/trackImages/takeoff.jpg"}]
 },
 {
     "id":2,
@@ -20,7 +24,9 @@
     "followers":2314,
     "about": "On stage from 2015. Played on one of the biggest festival Tomorrowland in Belgium at 2019",
     "latest": {"trackId": 2, "trackName":"Nobody","trackImg":"/images/trackImages/nobody.jpg"},
-    "tracks":[{"trackId": 2, "trackName":"Nobody","trackImg":"/images/trackImages/nobody.jpg"}]
+    "tracks":[{"trackId": 2, "trackName":"Nobody","trackImg":"/images/trackImages/nobody.jpg"}],
+    "playlists":[],
+    "popularTracks":[{"trackId": 2, "trackName":"Nobody","trackImg":"/images/trackImages/nobody.jpg"}]
 },
 {
     "id":3,
@@ -30,7 +36,9 @@
     "followers":2314,
     "about": "Good vibes, addictive Grooves & BIG Basslines ;)\nMost known for pioneering the 'Future House' genre, but comfortable with many different genres.",
     "latest":{"trackId": 3, "trackName":"Flamingo","trackImg":"/images/trackImages/flamingo.jpg"},
-    "tracks":[{"trackId": 3, "trackName":"Flamingo","trackImg":"/images/trackImages/flamingo.jpg"}]
+    "tracks":[{"trackId": 3, "trackName":"Flamingo","trackImg":"/images/trackImages/flamingo.jpg"}],
+    "playlists":[],
+    "popularTracks":[{"trackId": 3, "trackName":"Flamingo","trackImg":"/images/trackImages/flamingo.jpg"}]
 },{
     "id":4,
     "artistName":"Marnik",
@@ -39,7 +47,9 @@
     "followers":2314,
     "about": "MARNIK continue to rise within the music industry with over 300 million streams on Spotify to date, including their massive hits ‘Gam Gam’ which was a certified Gold record in France, their ‘Up & Down’ single hitting Platinum sales and “Alone” with KSHMR certified double platinum in Poland.",
     "latest": {"trackId": 4, "trackName":"Momentum","trackImg":"/images/trackImages/momentum.jpg"},
-    "tracks":[]
+    "tracks":[],
+    "playlists":[],
+    "popularTracks":[{"trackId": 4, "trackName":"Momentum","trackImg":"/images/trackImages/momentum.jpg"}]
 },{
     "id":5,
     "artistName":"Clarx",
@@ -48,7 +58,9 @@
     "followers":2314,
     "about": "After reaching nearly 20 million streams on Numb The Pain in a year making it his most popular record, Clarx began to pursue a totally new style of music combining Rock, Electronic and Orchestral elements.",
     "latest": {"trackId": 5, "trackName":"The Time Has Come","trackImg":"/images/trackImages/timehascome.jpg"},
-    "tracks":[]
+    "tracks":[],
+    "playlists":[],
+    "popularTracks":[{"trackId": 5, "trackName":"The Time Has Come","trackImg":"/images/trackImages/timehascome.jpg"}]
 },{
     "id":6,
     "artistName":"D-Charged",
@@ -57,7 +69,9 @@
     "followers":2314,
     "about": "💿 Hardstyle DJ/Producer",
     "latest":null,
-    "tracks":[]
+    "tracks":[],
+    "playlists":[],
+    "popularTracks":[]
 },{
     "id":7,
     "artistName":"Lensko",
@@ -66,7 +80,9 @@
     "followers":2314,
     "about": "",
     "latest": null,
-    "tracks":[]
+    "tracks":[],
+    "playlists":[],
+    "popularTracks":[]
 },{
     "id":8,
     "artistName":"Makoto",
@@ -75,7 +91,9 @@
     "followers":2314,
     "about": "Makoto is a testament to the international scope and power of electronic music. Born, raised and still based in Tokyo, MAkoto was incluenced at a young age by a wide variety of music ranging from classical to soul and funk.",
     "latest":null,
-    "tracks":[]
+    "tracks":[],
+    "playlists":[],
+    "popularTracks":[]
 },{
     "id":9,
     "artistName":"Raven & Kreyn",
@@ -84,5 +102,7 @@
     "followers":2314,
     "about": "Two french dudes who met on the internet 10 years ago, grew out to become one of the most leading French DJs duo. Their clean mixed tracks, fresh future house swing and soft-grindy sound made their music popular all around the globe.",
     "latest":null,
-    "tracks":[]
+    "tracks":[],
+    "playlists":[],
+    "popularTracks":[]
 }]

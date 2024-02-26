@@ -1,0 +1,27 @@
+.action-container{
+    display: flex;
+}
+.action-bttn{
+    background-color: rgb(54, 102, 102);
+    color: aliceblue;
+    width: fit-content;
+    padding: .5em;
+    border-radius: .5em;
+    margin: .5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: min(max(10px,2vw),14px);
+}
+.action-bttn * {
+    margin-inline: 5px;
+}
+.action-bttn:hover{
+    opacity: .7;
+    cursor: pointer;
+}
+.action-info{
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+}

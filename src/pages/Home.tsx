@@ -16,8 +16,8 @@ export const Home = () => {
         </p>
         <button>Sign up for free</button>
       </section>
-      <SectionTracks title="Popular Tracks" list={PopularTracks}/>
-      <SectionArtists title="Top artists of the Month" list={TopArtists}/>
+      <SectionTracks sectionTitle="Popular Tracks" tracksList={PopularTracks}/>
+      <SectionArtists sectionTitle="Top artists of the Month" artistsList={TopArtists}/>
       <section id="mobileapp">
         <div id="mobileApp-img">
           <img src={MobileApp} alt="MobileApp Screen"/>
