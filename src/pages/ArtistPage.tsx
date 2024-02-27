@@ -5,6 +5,7 @@ import Artists from '../data/artists.json'
 import {IoMdHeart} from 'react-icons/io'
 import {FaLocationDot} from 'react-icons/fa6'
 import ContentBlock from '../components/ContentBlock'
+import Footer from '../components/Footer'
 
 type ArtistType = {
   id:number,
@@ -61,7 +62,7 @@ const ArtistPage = () => {
   },[])
 
   return (
-    <div className="container">
+    <div className="artistPage-container">
       <section id='artist-banner'>
         <div id='artist-img'>
           <img src={artist.image} alt='Artist Image'/>
@@ -124,6 +125,7 @@ const ArtistPage = () => {
           </section>
         </div>
       </div>
+      <Footer/>
     </div>
   )
 }

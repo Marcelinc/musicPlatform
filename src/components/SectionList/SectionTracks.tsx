@@ -1,3 +1,5 @@
+/**List of tracks - in a row */
+
 import { useNavigate } from 'react-router-dom'
 import '../../resources/SectionContainer.css'
 
@@ -11,8 +13,7 @@ const SectionTracks = ({sectionTitle,tracksList}:SectionProps) => {
 
     const navigate = useNavigate()
     const redirectToTrack = (id:number) => {
-        //navigate('/track/' + id)
-        console.log(id)
+        navigate('/track/' + id)
     }
     const redirectToArtist = (id:number) => {
         navigate('/artist/' + id)

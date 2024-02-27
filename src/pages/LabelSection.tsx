@@ -3,6 +3,7 @@ import {IoMdHeart} from 'react-icons/io'
 import '../resources/LabelSection.css'
 import MusicTag from '../components/MusicTag'
 import { useNavigate } from 'react-router-dom'
+import Footer from '../components/Footer'
 
 export const LabelSection = () => {
 
@@ -30,6 +31,7 @@ export const LabelSection = () => {
             </div>
           </div>)}
         </section>
+        <Footer/>
       </div>
     )
   }
