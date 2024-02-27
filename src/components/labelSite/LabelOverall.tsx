@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 import '../../resources/LabelSite/LabelOverall.css'
-import { getLabelDesc } from '../../pages/LabelSite'
+import { getLabelDesc } from '../../pages/LabelPage'
 
 const LabelOverall = () => {
 
