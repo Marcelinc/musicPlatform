@@ -58,7 +58,7 @@
     "followers":2314,
     "about": "After reaching nearly 20 million streams on Numb The Pain in a year making it his most popular record, Clarx began to pursue a totally new style of music combining Rock, Electronic and Orchestral elements.",
     "latest": {"trackId": 5, "trackName":"The Time Has Come","trackImg":"/images/trackImages/timehascome.jpg"},
-    "tracks":[],
+    "tracks":[{"trackId": 5, "trackName":"The Time Has Come","trackImg":"/images/trackImages/timehascome.jpg"}],
     "playlists":[],
     "popularTracks":[{"trackId": 5, "trackName":"The Time Has Come","trackImg":"/images/trackImages/timehascome.jpg"}]
 },{

@@ -8,10 +8,17 @@
     width: 70vw;
     max-width: 1000px;
     min-width: var(--min-window-width);
-    background: #c0cad2;
-    color: rgb(40, 67, 97);
-    padding: 1em;
+    color: snow;
     min-height: calc(100vh - var(--nav-height));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#track-content{
+    background: rgba(80, 87, 94,0.64);
+    padding: 1em;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 /*Track's image*/

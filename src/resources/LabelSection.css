@@ -1,7 +1,10 @@
 .label-container{
     max-width: 1500px;
     margin: auto;
-    min-width: 365px;
+    min-width: 365px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .label-list{
     display: grid;

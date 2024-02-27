@@ -1,3 +1,5 @@
+/**List of artists - in a row */
+
 import { useNavigate } from 'react-router-dom'
 import '../../resources/SectionContainer.css'
 

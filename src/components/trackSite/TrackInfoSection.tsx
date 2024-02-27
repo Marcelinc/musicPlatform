@@ -8,7 +8,7 @@ type TrackInfoSectionProps = {
 
 const TrackInfoSection = ({children,title}: TrackInfoSectionProps) => {
   return (
-    <section className="section-container">
+    <section className="trackSection-container">
       <p className="section-line"></p>
       <h3 className="section-title">{title}</h3>
       <div className="section-content">
