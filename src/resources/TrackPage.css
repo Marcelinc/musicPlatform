@@ -10,9 +10,6 @@
     min-width: var(--min-window-width);
     color: snow;
     min-height: calc(100vh - var(--nav-height));
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 #track-content{
     background: rgba(80, 87, 94,0.64);
