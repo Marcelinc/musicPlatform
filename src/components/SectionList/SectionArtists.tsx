@@ -19,7 +19,7 @@ const SectionArtists = ({sectionTitle,artistsList}:SectionProps) => {
 
     //navigate to the artist's page
     const redirectToArtist = (artistId:number) => {
-        console.log('redirectToArtist', artistId)
+        //console.log('redirectToArtist', artistId)
         navigate('/artist/'+artistId);
     }
 
