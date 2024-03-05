@@ -7,6 +7,8 @@
 # Live
 https://musicplatform.netlify.app/
 
+## Backend example
+https://music-platform-backend-blond.vercel.app/api/artists
 
 <!-- MARKDOWN LINKS & IMAGES -->
 [TYpeScript.img]: https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white
