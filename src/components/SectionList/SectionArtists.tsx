@@ -2,20 +2,12 @@
 
 import { useNavigate } from 'react-router-dom'
 import '../../resources/SectionContainer.css'
+import { SectionArtistsProps } from '../../data/sectionPropsType';
 
-type SectionProps = {
-    sectionTitle:string,
-    artistsList: {
-        id:number,
-        artistName:string,
-        image: string
-    }[]
-}
-
-const SectionArtists = ({sectionTitle,artistsList}:SectionProps) => {
+const SectionArtists = ({sectionTitle,dataList}:SectionArtistsProps) => {
 
     const navigate = useNavigate();
-    console.log('artistslist',artistsList)
+    //console.log('artistslist',dataList)
 
     //navigate to the artist's page
     const redirectToArtist = (artistId:number) => {
@@ -27,12 +19,11 @@ const SectionArtists = ({sectionTitle,artistsList}:SectionProps) => {
     <section className='section-container'>
         <h2>{sectionTitle}</h2>
         <div className='section-list'>
-            {artistsList?.map((item => (
-                <div className='section-item' key={item.id} onClick={() => redirectToArtist(item.id)}>
+            {dataList?.map((item => (<div className='section-item' key={item.artist._id} onClick={() => redirectToArtist(item.artist._id)}>
                     <div className='section-image'>
-                        <img src={`/images/${item.image}`} alt='Artist Image'/>
+                        <img src={item.artist.image} alt='Artist Image'/>
                     </div>
-                    <span className='section-item-name'>{item.artistName}</span>
+                    <span className='section-item-name'>{item.artist.artistName}</span>
                 </div>)
             ))}
         </div>
