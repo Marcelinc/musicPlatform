@@ -6,6 +6,7 @@ import SectionTracks from "../components/SectionList/SectionTracks"
 import SectionArtists from "../components/SectionList/SectionArtists"
 import { useEffect, useState } from "react"
 import { apiResponseType } from "../data/apiResponseType"
+import Loading from "../components/Loading"
 
 type responseObject = {
   artist: {
@@ -20,6 +21,7 @@ export const Home = () => {
   const [topArtists, setTopArtists] = useState<responseObject[]>([]);
   const month = new Date().getMonth();
   const monthList = ["January", "February", "March", "April", "May","June", "July", "August", "September","October","November","December"];
+  const [loadingArtists,setLoadingArtists] = useState<Boolean>(true);
 
   useEffect(() => {
     //fetch data
@@ -36,7 +38,10 @@ export const Home = () => {
         setTopArtists(res.data)
       }
     })
-    .catch(err => console.log(err));
+    .catch(err => console.log(err))
+    .finally(() => {
+      setLoadingArtists(false);
+    });
   },[])
 
   return (
@@ -47,8 +52,10 @@ export const Home = () => {
         </p>
         <button>Sign up for free</button>
       </section>
-      <SectionTracks sectionTitle="Popular Tracks" tracksList={PopularTracks}/>
-      <SectionArtists sectionTitle={"Top artists of the "+monthList[month]} dataList={topArtists}/>
+      {loadingArtists ? <Loading/> : <>
+        <SectionTracks sectionTitle="Popular Tracks" tracksList={PopularTracks}/>
+        <SectionArtists sectionTitle={"Top artists of the "+monthList[month]} dataList={topArtists}/>
+      </>}
       <section id="mobileapp">
         <div id="mobileApp-img">
           <img src={MobileApp} alt="MobileApp Screen"/>
