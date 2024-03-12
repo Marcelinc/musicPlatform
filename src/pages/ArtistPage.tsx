@@ -1,50 +1,25 @@
 import { useNavigate, useParams } from 'react-router-dom'
 import '../resources/ArtistPage.css'
 import { useEffect, useState } from 'react'
-import Artists from '../data/artists.json'
 import {IoMdHeart} from 'react-icons/io'
 import {FaLocationDot} from 'react-icons/fa6'
 import ContentBlock from '../components/ContentBlock'
 import Footer from '../components/Footer'
-
-type ArtistType = {
-  id:number,
-  artistName:string,
-  image:string,
-  location:string,
-  followers:number,
-  about: string,
-  latest: {
-    trackId: number,
-    trackName:string,
-    trackImg:string,
-  } | null,
-  tracks: {
-    trackId: number,
-    trackName:string,
-    trackImg:string,
-  }[] | [],
-  playlists: {
-    playlistId: number,
-    playlistName:string,
-    playlistImg:string
-  }[] | [],
-  popularTracks: {
-    trackId: number,
-    trackName:string,
-    trackImg:string,
-  }[] | [];
-}
+import { artistType } from '../data/artistType'
+import { apiResponseType } from '../data/apiResponseType'
 
 const ArtistPage = () => {
 
   const {id} = useParams()
   const navigate = useNavigate();
-  const [artist,setArtist] = useState<ArtistType>({
+  const [artist,setArtist] = useState<artistType>({
     id: 0,
     artistName:'',
     image:'',
-    location:'',
+    location:{
+      name: '',
+      countryCode: '',
+    },
     followers:0,
     about: '',
     latest: null,
@@ -52,13 +27,23 @@ const ArtistPage = () => {
     playlists:[],
     popularTracks:[]
   })
+  const apiUrl: string | undefined = import.meta.env.VITE_APP_SERVER_API;
 
   useEffect(() => {
-    let artist = Artists.find(art => art.id+'' === id)
-    console.log(artist)
-    if(artist){
-      setArtist(artist)
-    }
+    //fetch artist data
+    fetch(apiUrl+'/artist/'+id,{
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    })
+    .then(res => res.json())
+    .then((res: apiResponseType) => {
+      console.log(res?.data)
+      if(res?.message === 'Success'){
+        setArtist(res.data);
+      }
+    })
+    .catch(err => console.log(err))
   },[])
 
   return (
@@ -71,7 +56,7 @@ const ArtistPage = () => {
           <div id='artist-info'>
             <span id='artistName'>{artist.artistName}</span>
             {artist.location ? <span id='location'>
-              <FaLocationDot/> {artist.location}</span> : 
+              <FaLocationDot/> {artist.location.name}</span> : 
             <span id='location'></span>}
           </div>
           <div id='artist-follow'>
@@ -85,7 +70,7 @@ const ArtistPage = () => {
           <section className='artist-section'>
             <h2 className='section-header'>Popular</h2>
             <div className='section-list'>
-              {artist.popularTracks.length > 0 ? artist.popularTracks.slice(0,4).map(track => <ContentBlock key={track.trackId} contentType='track' contentName={track.trackName} contentId={track.trackId} imgUrl={track.trackImg}/>) : 'No tracks'}
+              {/*artist.popularTracks.length > 0 ? artist.popularTracks.slice(0,4).map(track => <ContentBlock key={track.trackId} contentType='track' contentName={track.trackName} contentId={track.trackId} imgUrl={track.trackImg}/>) : 'No tracks'*/}
             </div>
           </section>
           <section className='artist-section'>

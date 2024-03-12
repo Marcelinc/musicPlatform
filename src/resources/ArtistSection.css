@@ -1,0 +1,11 @@
+.artistSection-container{
+    margin: auto;
+    width: 70vw;
+    max-width: 1000px;
+    min-width: var(--min-window-width);
+    color: snow;
+
+}
+#artistSection-content{
+    min-height: calc(100vh - 250px);
+}

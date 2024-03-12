@@ -1,0 +1,13 @@
+[{
+    "id":2,
+    "artistName":"Dropgun",
+    "image":"/images/artistImages/dropgun.jpg"
+},{
+    "id":9,
+    "artistName":"Raven & Kreyn",
+    "image":"/images/artistImages/ravenandkreyn.jpg"
+},{
+    "id":3,
+    "artistName":"Oliver Heldens",
+    "image":"/images/artistImages/oliverheldens.jpg"
+}]
